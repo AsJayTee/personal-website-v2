@@ -146,10 +146,10 @@ section:first-of-type { border-top: none; }
 .section-title em,
 .hero-display em,
 .contact-display em {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-mono);
+  font-style: normal;
   font-weight: 400;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: var(--accent);
 }
 
@@ -193,14 +193,8 @@ section:first-of-type { border-top: none; }
 .brand-mark {
   width: 28px;
   height: 28px;
-  border-radius: 8px;
-  background: var(--accent);
-  color: var(--accent-fg);
-  display: grid;
-  place-items: center;
-  font-family: var(--font-serif);
-  font-size: 18px;
-  line-height: 1;
+  flex-shrink: 0;
+  display: block;
 }
 
 .nav-links {

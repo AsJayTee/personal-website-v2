@@ -20,7 +20,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Portfolio",
+  title: "Siah Jin Thau — Portfolio",
   description: "Full-stack engineer focused on data-driven applications, applied AI, and infrastructure.",
   icons: {
     icon: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   manifest: "/favicon/site.webmanifest",
 };
 
-const themeScript = `(function(){var t=localStorage.getItem('theme');document.documentElement.setAttribute('data-theme',t||'dark');})();`;
+const themeScript = `(function(){var t=localStorage.getItem('theme')||((window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();`;
 
 export default function RootLayout({
   children,
@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-theme="dark"
+      data-theme="light"
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable}`}
     >

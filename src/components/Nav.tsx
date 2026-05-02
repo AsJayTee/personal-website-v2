@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Nav() {
@@ -6,8 +5,7 @@ export default function Nav() {
     <header className="nav">
       <div className="nav-inner">
         <a href="#" className="brand">
-          <Image src="/favicon/favicon-32x32.png" width={28} height={28} alt="" className="brand-mark" />
-          <span>Jin Thau</span>
+          <span>Siah Jin Thau</span>
         </a>
         <nav className="nav-links">
           <a href="#projects">Projects</a>

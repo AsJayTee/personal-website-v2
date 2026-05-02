@@ -22,14 +22,13 @@ export default function Hero() {
             <h1 className="hero-display">
               Building <em>intelligent</em>
               <br />
-              systems at the intersection
-              <br />
-              of AI, data, and web.
+              systems 
             </h1>
 
             <p className="hero-sub">
-              Final-year Data Science + Computer Science @ NUS.
-              I design, build and deploy end-to-end solutions.
+              Final-year Data Science & Computer Science Undergrad @ NUS
+              <br />
+              I design, build and deploy end-to-end solutions
             </p>
 
             <div className="btn-row">
